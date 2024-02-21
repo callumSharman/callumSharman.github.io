@@ -2,27 +2,101 @@ body {
     margin:0;
     height: 100%;
     background-color: rgb(22, 22, 22);
+
+    background-image: url('glass_final_highres.png');
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: 0,0;
 }
 
 h1{
     margin:0;
-    color: white;
+    color: rgba(255, 255, 255, 0.856);
     text-align: center;
+    font-size: 60pt;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.subh1{
+    color: rgba(255, 255, 255, 0.363);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .header{
     color: white;
     background-color: rgb(22, 22, 22);
+    border-bottom: solid;
+    border-color: rgb(95, 95, 95);
+    border-width: 1px;
     height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
 }
 
 .content{
     background-color: rgb(15, 15, 15);
-    height: 100vh;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    padding-top: 70px;
+    height: 10000px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
     border: solid;
     border-color: rgb(95, 95, 95);
     border-width: 1px;
+    z-index: 2;
+}
+
+.profilePic{
+    max-width: 100%;
+
+    border-radius: 50%;
+    border:solid;
+    border-width: 2px;
+    border-color: rgb(95, 95, 95);
+}
+
+.flex1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.f1section1{
+    display: flex; 
+    justify-content: center;
+    max-width: 120px;
+    min-width: 70px;
+    width:50vw;
+    padding:2%;
+    padding-left: 4%;
+    
+}
+
+.f1section2{
+    padding:2%;
+    padding-right: 4%;
+}
+
+.text{
+    color:rgb(187, 187, 187);
+    font-size: 14pt;
+}
+
+
+@media(max-width:768px) {
+    .content{
+        width:100%;
+    }
+    .flex1{
+        flex-direction: column;
+    }
+    .f1section1{
+        padding-left: 2%;
+        
+    }
+    
+    .f1section2{
+        padding-right: 2%;
+    }
 }
