@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Callum Sharman</title>
 
-        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/generalMobile.css">
         
 
     </head>
@@ -15,22 +16,24 @@
             <button onclick="window.location.href='testPage.html'">To test page</button>
         </div>
         <div class="content">
+
+            <!----------------------------HEADING------------------------------>
             <h1>Callum Sharman</h1>
             <div class="subh1">software engineer</div>
 
-            <div class="flex1">
-                <div class="f1section1">
-                    <img class="profilePic" src="img/profile1.jpg" alt="profile">
-                </div>
-                <div class="f1section2">
-                    <div class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In ante metus dictum at tempor commodo. Id ornare arcu odio ut sem nulla pharetra diam sit. Eget arcu dictum varius duis at consectetur lorem. Faucibus in ornare quam viverra orci sagittis eu volutpat. Massa sed elementum tempus egestas sed sed. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Viverra orci sagittis eu volutpat odio. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. In fermentum posuere urna nec. In metus vulputate eu scelerisque. A condimentum vitae sapien pellentesque habitant morbi tristique senectus. Ut sem nulla pharetra diam sit amet nisl suscipit adipiscing.
-                
+            <!-------------------------CONTENT_BODY----------------------------->
+            <div class="contentBody">
+                <div class="flex1">
+                    <div class="f1section1">
+                        <img class="profilePic" src="img/profile1.jpg" alt="profile">
+                    </div>
+                    <div class="f1section2">
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In ante metus dictum at tempor commodo. Id ornare arcu odio ut sem nulla pharetra diam sit. Eget arcu dictum varius duis at consectetur lorem. Faucibus in ornare quam viverra orci sagittis eu volutpat. Massa sed elementum tempus egestas sed sed. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Viverra orci sagittis eu volutpat odio. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. In fermentum posuere urna nec. In metus vulputate eu scelerisque. A condimentum vitae sapien pellentesque habitant morbi tristique senectus. Ut sem nulla pharetra diam sit amet nisl suscipit adipiscing.
+                        </div>
                     </div>
                 </div>
-            </div>
-                
-            </div>
+            </div>           
         </div>
         <!--
             What I need to do:
@@ -54,4 +57,16 @@
 
         -->
     </body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const contentBody = document.querySelector('.contentBody');
+            contentBody.classList.add('animateContentBody');
+
+            const h1 = document.querySelector('h1');
+            h1.classList.add('animateH1');
+
+            const subh1 = document.querySelector('.subh1');
+            subh1.classList.add('animateSubh1');
+        });
+    </script>
 </html>
