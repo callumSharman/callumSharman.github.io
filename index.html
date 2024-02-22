@@ -6,22 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Callum Sharman</title>
 
+        <!-- Style Sheets -->
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/generalMobile.css">
-        
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/headings.css">
+
+        <!-- Scripts -->
+        <script src="app.js" defer></script>
 
     </head>
     <body>
-        <div class="header">
+        <div class="header" id="appHeader">
             <button onclick="window.location.href='testPage.html'">To test page</button>
         </div>
-        <div class="content">
+        <div class="progBar" id="progBar"></div>
 
-            <!----------------------------HEADING------------------------------>
+        <!-- HEADING -->
+        <div class="heading">
             <h1>Callum Sharman</h1>
             <div class="subh1">software engineer</div>
+            <div class="subh1">(have some illustration in this section and something that moves)</div>
+        </div>
 
-            <!-------------------------CONTENT_BODY----------------------------->
+        <div class="content">
+            <!-- CONTENT_BODY -->
             <div class="contentBody">
                 <div class="flex1">
                     <div class="f1section1">
@@ -35,30 +44,15 @@
                         </div>
                     </div>
                 </div>
+
+                <hr class="divider">
             </div>           
         </div>
-        <!--
-            What I need to do:
-                intro blurb about me
-                    - techincal skills (use a chart to make it more engaging)
-                downloadable
-                links to socials - linkedin, github
-                boxes to click on for my projects
-                    - brief description
-                    - technologies used
-                    - i can have boxes of ongoing projects and do a little 
-                      under construction thing or something
-                testimonials/recommendations
-                    - from Liam
-                    - those google reviews about me
-                contact information
-
-                If I feel like it I can add a travel page with pictures from overseas and my video
-
-                make it responsive and mobile friendly
-
-        -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                headerBehaviour();
+                progBarBehaviour()
+            });
+        </script>
     </body>
-    <script src="app.js"></script>
-
 </html>
