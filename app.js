@@ -41,14 +41,15 @@ function headerBehaviour(){
 function progBarBehaviour(){
     const progBar = document.getElementById('progBar');
 
-    const totalDocumentHeight = Math.max(
-        document.body.scrollHeight,
-        document.documentElement.scrollHeight
-    );
-
-    const windowHeight = window.innerHeight
-
     window.addEventListener('scroll', ()=>{
+
+        const totalDocumentHeight = Math.max(
+            document.body.scrollHeight,
+            document.documentElement.scrollHeight
+        );
+    
+        const windowHeight = window.innerHeight;
+        
         currScrollStatus = window.scrollY;
 
         progBar.style.width = ((currScrollStatus)/(totalDocumentHeight - windowHeight) * 100) + '%';
