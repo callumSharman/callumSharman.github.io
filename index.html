@@ -25,7 +25,9 @@
             <div class="contentBody">
                 <div class="flex1">
                     <div class="f1section1">
-                        <img class="profilePic" src="img/profile1.jpg" alt="profile">
+                        <div class="profilePicContainer">
+                            <img class="profilePic" src="img/profile1.jpg" alt="profile">
+                        </div>
                     </div>
                     <div class="f1section2">
                         <div class="text">
@@ -57,16 +59,6 @@
 
         -->
     </body>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const contentBody = document.querySelector('.contentBody');
-            contentBody.classList.add('animateContentBody');
+    <script src="app.js"></script>
 
-            const h1 = document.querySelector('h1');
-            h1.classList.add('animateH1');
-
-            const subh1 = document.querySelector('.subh1');
-            subh1.classList.add('animateSubh1');
-        });
-    </script>
 </html>

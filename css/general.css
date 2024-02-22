@@ -32,12 +32,14 @@ h1{
     color: white;
     background-color: rgb(22, 22, 22);
     border-bottom: solid;
-    border-color: rgb(95, 95, 95);
+    border-color: rgba(95, 95, 95, 0.438);
     border-width: 1px;
     height: 50px;
     width: 100%;
     position: fixed;
     z-index: 10;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(22, 22, 22, 0.514);
 }
 
 .content{
@@ -48,22 +50,22 @@ h1{
     margin-left: auto;
     margin-right: auto;
     border: solid;
-    border-color: rgb(95, 95, 95);
+    border-color: rgba(95, 95, 95, 0.438);
     border-width: 1px;
-    z-index: 2;
-}
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(22, 22, 22, 0.514);
 
-.contentBody{
-    animation: contentBodyLoad 1s ease-in-out;
+
+    z-index: 2;
 }
 
 .profilePic{
     max-width: 100%;
-
     border-radius: 50%;
     border:solid;
     border-width: 2px;
     border-color: rgb(95, 95, 95);
+
+    animation: profilePicLoad 0.8s ease-in-out;
 }
 
 .flex1{
@@ -92,15 +94,14 @@ h1{
     font-size: 14pt;
 }
 
-@keyframes contentBodyLoad{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-
 @keyframes h1Load{
     from{margin-left: 6%; opacity: 0;}
 }
 
 @keyframes subh1Load{
-    from{margin-right: 0.5%; color: rgb(255, 255, 255);}
+    from{color: rgb(255, 255, 255);}
+}
+
+@keyframes profilePicLoad{
+    from{opacity: 0;}
 }
